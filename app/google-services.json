@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "840740039749",
+    "project_id": "tarot-96a1c",
+    "storage_bucket": "tarot-96a1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840740039749:android:06707b9541b7ed40df472c",
+        "android_client_info": {
+          "package_name": "com.candles.tarot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840740039749-ai2vmvaef7slcdgjdnrrsbqe5k3918b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2a2DN18yRQf_OAEd8oQSXWlK1MEUSkpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840740039749-ai2vmvaef7slcdgjdnrrsbqe5k3918b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
