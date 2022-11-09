@@ -50,5 +50,4 @@ public class MainActivity extends AppCompatActivity {
         btn_join = findViewById(R.id.btn_join);
         btn_exit = findViewById(R.id.btn_exit);
     }
-}
-//vinh
+
