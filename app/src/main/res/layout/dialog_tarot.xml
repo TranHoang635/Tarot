@@ -2,30 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity3">
+    android:layout_width="400dp"
+    android:layout_height="600dp"
+    android:background="#D0B189"
+    android:backgroundTint="#D0B189"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
-        android:layout_height="384dp"
-        app:srcCompat="@drawable/maigician" />
+        android:layout_height="355dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:id="@+id/txtHienthithongdiep"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="194dp"
         android:text="Thông điệp sẽ hiển thị ở đây"
         android:textAlignment="center"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
     <Button
-        android:id="@+id/btnCancel"
+        android:id="@+id/btn_Cancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="btnQuaylai"
-        android:text="Quay lại" />
+        android:text="Cancel" />
 
 </LinearLayout>
