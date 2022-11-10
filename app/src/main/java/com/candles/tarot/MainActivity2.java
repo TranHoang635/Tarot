@@ -2,46 +2,55 @@ package com.candles.tarot;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity2 extends MainActivity3 {
+public class MainActivity2 extends AppCompatActivity {
 
-    TextView txtHienthithongdiep;
-    Button btnRut, btnQuaylai;
-
-//    View.OnClickListener sukienthu2 = null;
+    Button btn_rut, btn_cancel;
+    TextView txtHienthi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        addControls();
-        addEvents();
-    }
-
-    private void addControls() {
-        btnRut = findViewById(R.id.btnRut);
-        txtHienthithongdiep = findViewById(R.id.txtHienthithongdiep);
-    }
-
-    private void addEvents() {
-        btnRut.setOnClickListener(new View.OnClickListener() {
+        btn_rut = (Button) findViewById(R.id.btn_Rut);
+        btn_rut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity2.this,MainActivity3.class);
-                startActivity(intent);
+                Dialog_tarot();
             }
         });
-//        sukienthu2 = new View.OnClickListener() {
+    }
+
+//-------------layout dialog_tarot----------------//
+    private void Dialog_tarot(){
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.dialog_tarot);
+//        txtHienthi = (TextView) dialog.findViewById(R.id.txtHienthithongdiep);
+//        txtHienthi.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                if ( view.getId() == R.id.btnRut){
-//                    txtHienthithongdiep.setText("THÔNG ĐIỆP ĐÃ HIỂN THỊ");
-//                }
+//                dialog.setContentView();
 //            }
-//        };
+//        });
+
+//        btn_rut = (Button) dialog.findViewById(R.id.btn_Rut);
+//        btn_rut.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                btn_rut.setText("HIỂN THỊ THÔNG ĐIỆP Ở ĐÂY!!!!");
+//            }
+//        });
+        btn_cancel = (Button) dialog.findViewById(R.id.btn_Cancel);
+        btn_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
     }
 }
