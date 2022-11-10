@@ -11,13 +11,13 @@
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="384dp"
-        app:srcCompat="@drawable/maigician" />
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:id="@+id/txtHienthithongdiep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thông điệp sẽ hiển thị ở đây"
         android:textAlignment="center"
         android:textSize="12sp" />
 
